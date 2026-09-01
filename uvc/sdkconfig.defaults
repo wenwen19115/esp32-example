@@ -1,0 +1,18 @@
+#
+# No SPIRAM by default (many ESP32-S3 modules have no PSRAM).
+# If your board has PSRAM, enable it in menuconfig: Component config → ESP PSRAM
+# and choose the correct mode (Quad / Octal).
+#
+# CONFIG_SPIRAM is not set
+
+#
+# USB
+#
+CONFIG_USB_HOST_CONTROL_TRANSFER_MAX_SIZE=3000
+CONFIG_USB_HOST_HW_BUFFER_BIAS_IN=y
+CONFIG_UVC_PRINTF_CONFIGURATION_DESCRIPTOR=y
+
+#
+# Wi-Fi SoftAP (HTML preview)
+#
+CONFIG_ESP_WIFI_SOFTAP_SUPPORT=y
