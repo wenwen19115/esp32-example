@@ -1,0 +1,18 @@
+#pragma once
+// GC2145 DVP camera pin mapping for ESP32-S31.
+#include "driver/gpio.h"
+#define CAM_PIN_PCLK GPIO_NUM_54
+#define CAM_PIN_MCLK GPIO_NUM_55
+#define CAM_PIN_VSYNC GPIO_NUM_56
+#define CAM_PIN_HSYNC GPIO_NUM_57
+#define CAM_PIN_SCCB_SDA GPIO_NUM_0
+#define CAM_PIN_SCCB_SCL GPIO_NUM_1
+#define CAM_EXPANDER_ADDR 0x20
+#define CAM_EXP_PORT_PWR 0
+#define CAM_EXP_BIT_PWR 5
+#define CAM_EXP_PORT_RST 1
+#define CAM_EXP_BIT_RST 2
+#define CAM_PWR_SETTLE_MS 10
+#define CAM_RST_ASSERT_MS 10
+#define CAM_RST_RELEASE_MS 30
+#define CAM_GC2145_SCCB_ADDR 0x3c
